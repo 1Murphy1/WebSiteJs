@@ -23,6 +23,22 @@
     </header>
     <div class="main__general">
         <main>
+            <div class="main__general__filters">
+                <button id="apiButton">Добавить факт</button>
+                <input name="s" placeholder="Искать.." type="search">
+                <button type="submit">Поиск</button>
+                <select name="length" id="length">
+                    <option value="">Длина строк</option>
+                    <option value="50">50 символов</option>
+                    <option value="100">100 символов</option>
+                    <option value="150">150 символов</option>
+                </select>
+                <select name="filter" id="filter">
+                    <option value="">Фильтрация по кол-ву символов</option>
+                    <option value="asc">По возрастанию</option>
+                    <option value="desc">По убыванию</option>
+                </select>
+            </div>
         </main>
     </div>
     <script src="login.js"></script>
