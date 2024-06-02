@@ -21,6 +21,46 @@
   margin: 20px;
   font-size: 20px;
 }
+.main__general {
+  display: flex;
+  align-items: flex-start;
+}
+.main__general__filters {
+  width: 100%;
+  display: flex;
+}
+.main__general__filters * {
+  border-radius: 0;
+  border: 1px solid black;
+  height: 40px;
+}
+.main__general__filters input {
+  border-right: none;
+  width: 30%;
+}
+.main__general__filters select {
+  width: 25%;
+  border-right: none;
+}
+.main__general__filters button {
+  border-right: none;
+  cursor: pointer;
+  width: 10%;
+}
+.main__general__content {
+  padding: 20px;
+}
+.main__general__content span {
+  display: block;
+  margin-top: 10px;
+}
+.main__general__content span:first-child {
+  margin-top: 0;
+}
+.main__general main {
+  min-height: 100vh;
+  width: 100%;
+}
 
 .login {
   width: 100%;

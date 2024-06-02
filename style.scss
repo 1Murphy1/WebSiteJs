@@ -22,8 +22,54 @@
              font-size: 20px;
          }
     }
-}
 
+    &__general{
+        display: flex;
+        align-items: flex-start;
+
+        &__filters {
+            width: 100%;
+            display: flex;
+            * {
+                border-radius: 0;
+                border: 1px solid black;
+                height: 40px;
+            }
+            input {
+                border-right: none;
+                width: 30%;
+            }
+            select {
+                width: 25%;
+                border-right: none;
+            }
+            button  {
+                border-right: none;
+                cursor: pointer;
+                width: 10%;
+            }
+        }
+
+        &__content {
+            padding: 20px;
+
+            span {
+                display: block;
+                margin-top: 10px;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+
+        main{
+            min-height: 100vh;
+            width: 100%;
+        }
+        
+    }
+
+}
 
 
 .login{
