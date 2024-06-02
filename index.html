@@ -17,7 +17,7 @@
         <button onclick="showMain()">Далее</button>
     </div>
 </div>
-<div class="main" style="display: none;">
+<div class="main">
     <header>
         <span id="NameUser">Site</span>
     </header>
@@ -25,7 +25,7 @@
         <main>
             <div class="main__general__filters">
                 <button id="apiButton">Добавить факт</button>
-                <input name="s" placeholder="Искать.." type="search">
+                <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
                 <select name="length" id="length">
                     <option value="">Длина строк</option>
@@ -33,15 +33,23 @@
                     <option value="100">100 символов</option>
                     <option value="150">150 символов</option>
                 </select>
-                <select name="filter" id="filter">
+                <select name="length" id="filter">
                     <option value="">Фильтрация по кол-ву символов</option>
                     <option value="asc">По возрастанию</option>
                     <option value="desc">По убыванию</option>
                 </select>
             </div>
+            <div class="main__general__content">
+            </div>
         </main>
     </div>
-    <script src="login.js"></script>
 </div>
+<script src="login.js"></script>
+<script src="api.js"></script>
+<script>
+    document.getElementById('apiButton').addEventListener('click', function() {
+        makeApiRequest();
+    });
+</script>
 </body>
 </html>
