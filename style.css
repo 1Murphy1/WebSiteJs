@@ -58,7 +58,7 @@
   margin-top: 0;
 }
 .main__general main {
-  min-height: 100vh;
+  min-height: 100%;
   width: 100%;
 }
 

@@ -24,7 +24,7 @@
     <div class="main__general">
         <main>
             <div class="main__general__filters">
-                <button id="apiButton">Добавить факт</button>
+                <button id="apiButton"  >Добавить факт</button>
                 <input name="s" placeholder="Искать..." type="search">
                 <button type="submit">Поиск</button>
                 <select name="length" id="length">
@@ -46,9 +46,11 @@
 </div>
 <script src="login.js"></script>
 <script src="api.js"></script>
+<script src="filter.js"></script>
+<script src="display.js"></script>
 <script>
     document.getElementById('apiButton').addEventListener('click', function() {
-        makeApiRequest();
+        AddFact();
     });
 </script>
 </body>
