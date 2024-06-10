@@ -1,5 +1,6 @@
 let facts = [];
 
+
 function AddFact() {
     if (facts.length > 9) {
         alert("Нельзя вывести больше 10 фактов")
@@ -30,9 +31,9 @@ function sortFacts(facts) {
     const sortSelect = document.getElementById('filter');
     const sortOrder = sortSelect.value;
 
-    if (sortOrder === 'asc') {
+    if (sortOrder === 'asc') { //по возрастанию
         return facts.sort((a, b) => a.length - b.length);
-    } else if (sortOrder === 'desc') {
+    } else if (sortOrder === 'desc') { //по убыванию
         return facts.sort((a, b) => b.length - a.length);
     }
     return facts;
@@ -56,6 +57,6 @@ function highlightSearchTerm(fact) {
 
     if (!searchTerm) return fact;
 
-    const regex = new RegExp(`(${searchTerm})`, 'gi');
-    return fact.replace(regex, '<mark>$1</mark>');
+    const regex = new RegExp(`(${searchTerm})`, 'gi');//будет искаться текст по запросу 
+    return fact.replace(regex, '<mark>$1</mark>');//теги для выделения ткста 
 }
